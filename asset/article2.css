@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Raleway:wght@500&family=Quicksand:wght@500;700&display=swap');
+
+body{
+    overflow: auto;
+    padding: 0;
+    margin: 0;
+    font-family: Quicksand;
+}
+
+main{
+    padding: 20px;
+    overflow: auto;
+}
+
+header{
+    display: inline;
+}
+nav{
+    overflow: hidden; 
+    position: sticky;
+    background-color: white;
+    opacity: 95%;
+    top: 0;  
+}
+
+.logo img{
+    width:65px;
+    float: left;
+    margin-left: 30px;
+    margin-top: 10px;
+}
+
+
+nav ul{
+    float: right;
+    margin-right: 25px;
+}
+
+nav ul li{
+    display: inline-block;
+    padding: 0 30px 0 30px;
+    list-style-type: none;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: black;
+    font-family: Montserrat;
+    font-size: smaller;
+    text-transform: uppercase;
+}
+
+nav ul li a:hover{
+    border-bottom: 2px solid tomato;
+}
+
+.contact{
+    border: 2px solid rgb(13, 103, 206);
+}
+
+.contact a:hover{
+    border-bottom: none;
+}
+
+.contact:hover{
+    background-color: rgba(118, 197, 250, 0.575);
+    transition: 0.9s ease-in;
+}
+
+.btn{
+    border-radius: 10px;
+    padding: 7px 13px;
+}
+
+h1{
+    font-family: Montserrat;
+    color: tomato;
+    font-size:  35px;
+    text-align: center;
+}
+
+h3{
+    font-family: Montserrat;
+    color: tomato;
+}
+
+
+.card{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.featured-image{   
+    width:100%;
+    height:300px;
+    object-fit: cover;
+    object-position: center;
+}
+
+li{
+    padding: 20px;
+    text-transform: capitalize;
+}
+
+
+button{
+    font-family: Raleway;
+    padding: 10px 13px 10px 13px ;
+    margin-left: 12px;
+    border-radius: 20px;
+    background-color: tomato;
+    color: white;
+}
+
+button:hover{
+    box-shadow: 1px 5px 18px 1px rgba(0,0,0,0.5);;
+    color: tomato;
+    background-color: white;
+}
+
+.profile img{
+    width: 200px;
+    max-width: 100px;    
+}
+
+.profile header{
+    text-align: center;
+}
+
+.profile h3{
+    color: black;
+}
+
+#content{
+    float: left;
+    width: 75%;
+}
+
+.inform{
+    text-align: center;
+    color: black;
+}
+
+aside{
+    float: right;
+    width: 25%;
+    padding-left: 20px;
+}
+
+footer{
+    font-family: Quicksand;
+    padding: 10px;
+    background-color: tomato;
+    color: white;
+    text-align: center; 
+}
+
+@media screen and (max-width:1000px){
+    #content,aside{
+        width: 100%;
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 621px){
+    nav ul li{
+        padding: 0 10px 0 10px;
+    }
+
+    .logo img{
+        display: none;
+    }
+
+    nav ul{
+        float: none;
+        position: relative;
+        left:130px;
+    }
+}
+
+@media screen and (max-width: 619px){
+    nav ul{
+        position: relative;
+        left:115px;
+    }
+}
+
+
+@media screen and (max-width: 503px){
+    nav ul{
+        position: relative;
+        left:-1px;
+    }
+    h1{
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 404px){
+    nav ul{
+        margin-right: 0px;
+        position: relative;
+        right: 14px; 
+    }
+}
+
+@media screen and (max-width: 380px){
+    nav ul{
+        position: relative;
+        left:-12px;
+    }
+}
+
+@media screen and (max-width: 379px){
+    .contact{
+        position: absolute;
+        left: 265px;
+        top: -9px;    
+    }
+    nav ul{
+        left: -25px;
+    }
+}
+
+@media screen and (max-width: 343px){
+    nav{
+        padding-bottom: 5px;
+    }
+    nav ul{
+        font-size: 15px;
+        left: -38px;  
+    }
+    .contact{
+        left: 255px;
+    }
+}
+
+*{
+    box-sizing: border-box;
+}

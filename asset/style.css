@@ -1,0 +1,507 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Raleway:wght@500&family=Quicksand:wght@500;700&display=swap');
+
+
+main{
+    overflow: auto;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Quicksand;
+}
+
+header{
+    display: inline;
+}
+nav{
+    overflow: hidden; 
+    position: sticky;
+    background-color: white;
+    opacity: 95%;
+    top: 0;  
+}
+
+.logo img{
+    width:65px;
+    float: left;
+    margin-left: 30px;
+    margin-top: 10px;
+}
+
+
+nav ul{
+    float: right;
+    margin-right: 25px;
+}
+
+nav ul li{
+    display: inline-block;
+    padding: 0 30px 0 30px;
+    list-style-type: none;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: black;
+    font-family: Montserrat;
+    font-size: smaller;
+    text-transform: uppercase;
+}
+
+nav ul li a:hover{
+    border-bottom: 2px solid tomato;
+}
+
+.contact{
+    border: 2px solid rgb(13, 103, 206);
+}
+
+.contact a:hover{
+    border-bottom: none;
+}
+
+.contact:hover{
+    background-color: rgba(118, 197, 250, 0.575);
+    transition: 0.9s ease-in;
+}
+
+.btn{
+    border-radius: 10px;
+    padding: 7px 13px;
+}
+
+
+.jumbotron{
+    background-image:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.5)), url(../asset/image/source/bg-banner.jpg);
+    background-size: cover;
+    background-position: center;
+    width:100%;
+    height: 640px;
+}
+
+.banner{
+    padding:90px 33px ;
+}
+
+
+h1{
+    color: tomato;
+    font-family: Montserrat;
+    font-weight: bold;
+    font-size: 2.7em;
+    text-transform: uppercase; 
+}
+
+h2{
+    color: rgb(255, 255, 255); 
+    font-family: Raleway;
+    font-weight: bold;
+    font-size: 1.1em;
+    text-transform: capitalize;
+}
+
+#about:hover{
+    color: tomato;
+    background-color: white;
+}
+
+#about{ 
+    display: inline-block; margin-top:5px;
+    border-radius: 50px;
+    padding: 10px 12px;
+    background-color: tomato;
+    /* font property */
+    text-decoration: none;
+    font-size: 15px;
+    font-family: Quicksand;
+    color: rgb(255, 255, 255);
+}
+
+h3{
+    color: black;
+}
+
+.card{
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding:20px;   
+}
+
+.container{
+    margin: 30px;
+}
+
+#content{
+    float: left;
+    width: 50%;
+    
+}
+
+.opener h3{
+    font-family: Montserrat;
+    text-transform: capitalize;
+    color: tomato;
+    font-size: 30px;
+}
+
+.opener span{
+    font-family: Quicksand;
+    font-style: oblique;
+}
+
+.opener p{
+    font-family: Quicksand;
+}
+
+.side{
+    width: 46%;
+    float: right; 
+}
+
+.side img{
+    border-radius: 50px;
+    width:100%;
+    height: 420px;
+    object-fit: cover; 
+}
+
+.heading{
+    text-align: center;
+    color: tomato;
+    font-size: 30px;
+    margin-bottom:-7px ;
+}
+
+.grid{
+    max-width: 100%;
+    padding: 10px;
+    margin-top: 600px;
+    background-color: rgb(233, 229, 229);
+}
+
+.layout-article{
+    width: 100%;
+    padding: 0;
+    list-style-type: none;
+    display: block;
+    text-align: center;
+}
+
+.layout-article::after{
+    clear: both;
+}
+
+.layout-article:before , .layout-article::after{
+    content: "";
+    display: table;
+}
+
+.layout-article li{
+    display: inline-block;
+    width:300px;
+    height: 400px;
+    margin: 20px 4px 0 4px;
+
+}
+
+.layout-article li a{
+    text-decoration: none;
+    font-family: Montserrat;
+    color: white;
+    margin:2px;
+}
+
+.layout-article h4{
+    text-transform: uppercase;
+    padding: 10px;
+    background-color: tomato;
+}
+
+.box{
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    border-radius: 15px;
+}
+
+.box:hover{
+    box-shadow: 0px 5px 22px 6px rgba(0,0,0,0.75);
+    transition: 0.20s linear;
+}
+
+.article-1{
+    background-image: linear-gradient(rgba(0,0,0,0.99),rgba(0,0,0,0.10)), url(../asset/image/source/networking.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.article-2{
+    background-image: linear-gradient(rgba(0,0,0,0.80),rgba(0,0,0,0.40)), url(../asset/image/source/hardware.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.article-3{
+    background-image: linear-gradient(rgba(0,0,0,0.90),rgba(0,0,0,0.45)), url(../asset/image/source/software.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.article-4{
+    background-image: linear-gradient(rgba(0,0,0,0.80),rgba(0,0,0,0.100)), url(../asset/image/source/microsoft.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.article-1:hover{ background-image: linear-gradient(rgba(0,0,0,0.0),rgba(0,0,0,0.300)), url(../asset/image/source/networking.jpg);}
+.article-2:hover{background-image: linear-gradient(rgba(0,0,0,0.0),rgba(0,0,0,90)), url(../asset/image/source/hardware.jpg);}
+.article-3:hover{ background-image: linear-gradient(rgba(0,0,0,0.100),rgba(0,0,0,0.65)), url(../asset/image/source/software.jpg);}
+.article-4:hover{ background-image: linear-gradient(rgba(0,0,0,0.100),rgba(0,0,0,0.80)), url(../asset/image/source/microsoft.jpg);}
+
+
+.contact-info{ 
+    padding: 10px;
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#identity{
+    width: 68%;
+    float: left; 
+}
+
+.contact-info p{
+    font-family: Raleway;
+    padding: 20px;
+}
+
+.iconlogo{
+    
+    background-color: rgb(255, 255, 255);
+    width: 55px;
+    border-radius: 50%;
+    display: block; margin: auto;
+}
+
+.info{
+    width: 270px;
+    background-color: tomato;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 70px 0 70px 0;    
+}
+
+.info:hover{
+    border-radius: 0px 70px 0px 70px;
+    transition: 1s linear;
+    box-shadow: 7px 9px 40px 3px rgba(0,0,0,0.75);    
+}
+
+h5{
+    font-family: Montserrat;
+    text-transform: uppercase; 
+    font-size: 31px;
+    color:#F4511E;
+    margin-bottom: 8px;
+}
+
+.info p{
+    font-family: Quicksand;
+    color: white;
+    text-align: center;
+    
+}
+
+.profile img{
+    width: 200px;
+    max-width: 100px;    
+}
+
+aside{
+    padding: 30px;
+    float: right;
+    width: 32%; 
+    text-align: center;
+    
+}
+
+footer{
+    font-family: Quicksand;
+    padding: 10px;
+    background-color: tomato;
+    color: white;
+    text-align: center; 
+}
+
+
+/* Width for Mobile Responsive */
+
+@media screen and (max-width:1000px){
+    #identity,aside{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 786px){
+    .grid{
+        margin-top: 800px;
+    }
+}
+@media screen and (max-width: 669px){
+    .grid{
+        margin-top: 900px;
+    }
+}
+
+@media screen and (max-width: 621px){
+    #content,
+    .side{
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .jumbotron{
+        height:535px;
+    }
+    .banner{
+        padding:89px 20px ;
+    }
+    h1{
+        font-size:  1.7em;
+    }
+    h2{
+        font-size: 0.9em;
+    }
+    #contact{
+        font-size: 11px;
+    }
+
+    nav ul li{
+        padding: 0 10px 0 10px;
+    }
+
+    .logo img{
+        display: none;
+    }
+
+    nav ul{
+        float: none;
+    }
+    .grid{
+        margin-top: 1030px;
+    }
+}
+
+@media screen and (max-width: 621px){
+    nav ul li{
+        padding: 0 10px 0 10px;
+    }
+    nav ul{
+        float: none;
+        position: relative;
+        left:130px;
+    }
+
+}
+
+@media screen and (max-width:620px){  
+    nav ul{
+        position: relative;
+        left:130px;
+    }
+}
+
+
+@media screen and (max-width: 619px){
+    nav ul{
+        position: relative;
+        left:115px;
+    }
+}
+
+@media screen and (max-width: 539px){
+    .grid{
+        margin-top: 1080px;
+    }
+    nav ul{
+        position: relative;
+        left:-1px;
+    }
+}
+
+
+@media screen and (max-width: 503px){
+    .grid{
+        margin-top: 1200px;
+    }
+}
+
+@media screen and (max-width: 404px){
+    nav ul{
+        margin-right: 0px;
+        position: relative;
+        right: 14px; 
+    }
+    .grid{
+        margin-top: 1330px;
+    }
+}
+
+@media screen and (max-width: 380px){
+    nav ul{
+        position: relative;
+        left:-12px;
+        
+    }
+}
+
+@media screen and (max-width: 379px){
+    .contact{
+        position: absolute;
+        left: 265px;
+        top: -9px;    
+    }
+    nav ul{
+        left: -25px;
+    }
+    .info{
+        width: 237px;
+    }
+}
+
+@media screen and (max-width: 343px){
+    nav{
+        padding-bottom: 5px;
+    }
+    nav ul{
+        font-size: 15px;
+        left: -38px;  
+    }
+    .contact{
+        left: 255px;
+    }
+    .grid{
+        margin-top: 1380px;
+    }
+    .layout-article li{
+        width: 260px;
+        height: 300px;
+    }
+}
+
+@media screen and (max-width:300px){
+    .layout-article li{
+        width:200px;
+    }
+    .info{
+        width: 199px;
+    }
+}
+
+
+*{
+    box-sizing: border-box;
+}
